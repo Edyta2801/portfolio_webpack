@@ -5,7 +5,7 @@ import Contact from './components/views/Contact/Contact.js';
 import About from './components/views/About/About.js';
 import styles from './App.scss';
 import { AnimatedSwitch } from 'react-router-transition';
-import MainLayout from './components/layout/MainLayout/MainLayout.js'
+import MainLayout from './components/layout/MainLayout/MainLayout.js';
 import Home from './components/views/Home/Home.js';
 
 
@@ -16,6 +16,7 @@ class App extends React.Component {
       <BrowserRouter>
         <MainLayout>
           <AnimatedSwitch
+            location={location}
             atEnter={{ opacity: 0, offset: 200 }}
             atLeave={{ opacity: 0 }}
             atActive={{ opacity: 1, offset: 0 }}

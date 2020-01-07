@@ -33,16 +33,23 @@
 
 .logo {
   color: $color-light;
-  font-size: 24px;
+  // font-size: 24px;
+
+  .nameJunior{
+    color:red;
+  }
 }
 
 .name {
   position: relative;
   top: ($base-size / -4);
-  left: $base-size;
+  left: ($base-size / 4);
   font-family: $font-header;
-  text-transform: lowercase;
-  font-size: ($base-size * 1.5);
+  text-transform: none;
+  font-size: ($base-size );
+
+
+
 }
 
 .contact {
