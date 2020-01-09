@@ -21,9 +21,9 @@ class Header extends React.Component {
             </Col>
             <Col md={6}>
               <nav>
-                <NavLink to='/trips' activeClassName='active'>Projects</NavLink>
-                <NavLink to='/countries' activeClassName='active'>About</NavLink>
-                <NavLink to='/info' activeClassName='active'>Contact</NavLink>
+                <NavLink to='/projects' activeClassName='active'>Projects</NavLink>
+                <NavLink to='/about' activeClassName='active'>About</NavLink>
+                <NavLink to='/contact' activeClassName='active'>Contact</NavLink>
               </nav>
             </Col>
 
