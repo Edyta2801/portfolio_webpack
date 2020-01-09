@@ -16,9 +16,9 @@ class Home extends React.Component {
   render() {
     const {title, subtitle, imageUrl, largeImageUrl, url} = this.props;
     return (
-      <div className="mi-portfolio">
-        <div className="mi-portfolio-image">
-          <img src={imageUrl} alt="Haltico" />
+      <div className='mi-portfolio'>
+        <div className='mi-portfolio-image'>
+          <img src={imageUrl} alt='Haltico' />
           <ul>
             {!largeImageUrl ? null : <li>
               <button onClick={() => this.setToggler(!this.state.toggler)}>
@@ -26,14 +26,14 @@ class Home extends React.Component {
               </button>
             </li>}
             { url ? <li>
-              <a rel="noopener noreferrer" target="_blank" href={url}>
+              <a rel='noopener noreferrer' target='_blank' href={url}>
                 <Icon.Link/>
               </a>
             </li> : null}
           </ul>
         </div>
         {!url ? <h5>{title}</h5> : <h5>
-          <a rel="noopener noreferrer" target="_blank" href={url}>
+          <a rel='noopener noreferrer' target='_blank' href={url}>
             {title}
           </a>
         </h5>}
